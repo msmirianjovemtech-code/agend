@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Agendamento.css">
+    <title>Agendamento</title>
+</head>
+     <body>
+    
+        <main>
+             <div class="Agendamento">
+    
+    <form action="" id="formcadastro">
+
+         <H1>Agendamentos</H1>
+        <label for="nome">Nome</label>
+        <input type="text" name="Nome" id="nome"required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email"required>
+        <label for="telefone" >Telefone</label>
+        <input type="telefone" id="telefone">
+         <label for="idade">Idade</label>
+        <input type="idade" id="idade"required>
+        <label for="horario">Horário</label>
+        <input type="time" id="horario"required>
+        <label for="data">Data</label>
+        <input type="date" id="data"required>
+        <label for="especialidade">Especialidades</label>
+        <select name="" id="especialidade"required>
+            <option value="clinico geral">Clinico Geral</option>
+            <option value="pediatria">Pediatria</option>
+            <option value="dermatologia">Dermatologia</option>
+            <option value="odontologia">Odontologia</option>
+            <option value="cardiologia">Cardiologia</option>
+
+
+        </select>
+        
+        <label for="Conveniado?">Conveniado?</label>
+        <input type="radio" name="conveniado" id="sim" value="sim" required>Sim
+        <input type="radio" name="conveniado" id="nao" value="não"required>Não
+        <label for="Serviços">Serviços</label>
+        <input type="checkbox"name="servico"id="retorno" value="retorno">Retorno
+        <input type="checkbox"name="servico"id="exames" value="exame">Exames
+        <input type="checkbox"name="servico"id="teleconsulta" value="teleconsulta">Teleconsulta
+        <input type="checkbox"name="servico"id="receitas" value="receita">Receitas
+        <input type="checkbox"name="servico"id="medico" value="medico">Médico
+
+        <label for="medico responsavel">Médico Responsável</label>
+
+        <select name="" id="Medico Responsavel"required> 
+            <option selected disabled value="" >Informe o seu Médico</option>
+            <option value="dr.Silva">Dr.Silva</option>
+            <option value="dr.Wallace">Dr.Wallace</option>
+            <option value="dra.Carla">Dra.Carla</option>
+            <option value="dra.Cida">Dra.Cida</option>
+            <option value="dr.Jeferson">Dr.Jeferson</option>
+        
+
+        </select>
+
+        <label for="sintomas relatados">Sintomas Relatados</label>
+        <textarea name="sintomas" id="sintomas" placeholder="Descreva seus sintomas"></textarea>
+       
+        <button type="submit" onclick="salvarcadastro(event)" id ="btncadastro" >Salvar cadastro </button>
+
+    
+    </form>
+
+</div>
+</main>
+<script src="Agendamento.js"></script>
+
+</body>
+</html>
